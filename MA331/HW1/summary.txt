@@ -1,0 +1,25 @@
+(ii)
+5 num summary x:
+0.20 1.70 5.30 6.65 9.00
+5 num summary y:
+0.1 1.7 4.8 7.9 9.4
+Variance x:
+9.858909
+Variance y:
+11.72018
+Variance x,y:
+8.426727
+The is an outlier at the point (6.2,0.1)
+
+(iii)
+Correlation Coefficient:
+0.7839301
+The linear association between x and y is positive and relatively strongly correlated with a correlation of .783
+
+(iv)
+Correlation Coefficient no outlier:
+0.9871091
+The linear association between x and y is positive and very strongly correlated with a correlation of .987
+
+(v)
+The observed difference of the line of best fit does not appear to be that great but there is a significant difference in correlation of .204 between the original data set and the data set with outliers removed.

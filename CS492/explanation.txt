@@ -1,0 +1,5 @@
+Task 1:
+The job of task 1 is to only allow one hungry philosopher to attempt to eat at a time. This was done by creating a pthread mutex variable. In the diner method, the mutex variable is locked to precent the grabbing of forks, and then after the fork mutex is also locked the declared variable is then unlocked. This allows one philosopher to eat at a time (ie each iteration of the method).
+
+Task 2:
+The job of task 2 is to make it so only 4 philosophers can attempt to eat at once. This is done by creating two variables, a mutex and a condition, and a integer count variable initialized to 4. Then in the diner method the mutex is locked, and the conditional wait is applied to the mutex by the conditional variable, if there is no one attempting to eat. After this we decrease the number trying to eat and unlock the mutex so that only 4 and not 5 can attempt to eat. After this, we relock the mutex and increase the number eating, singaling the condition variable to act on the mutex and relock it if the eating number raises above 4. 

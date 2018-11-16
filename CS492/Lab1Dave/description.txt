@@ -1,0 +1,12 @@
+David DeLaus and Bryan Gardner
+2/20/18
+Inter-Process Lab
+I pledge my honor that I have abided by the Stevens Honor System
+
+1. We are using p_thread_mutex when a untensil is being used. This is so that not every
+philosopher can reach for a utensil, it will lock others out as a philosopher reaches for a fork.
+
+2. We used a pthread condition varible, a lock, and a count. We started the count at 4 and decrement
+it everytime someone tries to eat. When it reaches 0 it will lock philosophers from trying to eat.
+We did this by using a condition varible to indicate locked status. This means that only 4 philosophers
+can eat at a time. After they eat it will increment the count and unlock the threads using a condition varible.

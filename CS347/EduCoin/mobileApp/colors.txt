@@ -1,0 +1,6 @@
+Hello guys
+
+Here are colors for our app:
+
+- Background for app: rgb(61, 148, 202)
+- StatusBar: 

@@ -1,0 +1,10 @@
+The people on this list were present but couldn't commit anything due to merge issues:
+    - Dylan DiGeronimo
+    - Annabelle Gartner
+    - Evan Garrahy
+    - Anthony Duca
+    - Dave DeLaus
+    - Corey Barnwell
+    - John Encke
+    - Mijeong Ban
+    - Nate Burgdorfer

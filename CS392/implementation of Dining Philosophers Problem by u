@@ -1,0 +1,6 @@
+implementation of Dining Philosophers Problem by using pthread library (*C*, C++)
+
+Typical IPD problem
+ -philosophers eat/thing
+ -eating needs 2 forks
+ -pick one fork at a time

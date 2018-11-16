@@ -1,0 +1,4 @@
+"Rule: ocaml dependencies ml (%=hw1 )": "\0111\136\169\175\017\146Dl\025\167\212\139D\"\132"
+"Resource: /Users/jakefallin/Documents/School/CS496/hw1.ml": "\244;\1827\152\216\128\141cq\133\2306o\021e"
+"Rule: ocaml: cmo* -> byte (%=hw1 )": "\\\243\171\196\149?\153\237\130zxn\021\227x_"
+"Rule: ocaml: ml -> cmo & cmi (%=hw1 )": "\020\018P)_\197;\136\158\218\029\"(\239I("

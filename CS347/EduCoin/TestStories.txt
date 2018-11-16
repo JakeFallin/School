@@ -1,0 +1,242 @@
+Test Stories
+
+Corey Barnwell:
+Title: Client Request Coin
+Acceptance Test: clientReqCoin
+Priority: 2
+Story Points: 5
+Given the client has coin
+When the client requests coin
+Then remove coin from the account
+And send credit to client
+
+
+Title: Blockchain Add Coin
+Acceptance Test: blockAddCoin
+Priority: 1
+Story Points: 5
+Given the client exists
+When the blockchain adds coin
+Then add coin to the client account
+
+Mobile App:
+
+John Encke:
+Title: User views balance and transaction history
+Test: balanceAndTransactionHist
+Priority: 1
+Story Points: 4
+Given the user is logged in
+When they access the transaction and balance page
+then they will be able to view their balance and transaction history
+
+Evan Garrahy:
+Title: Customer Modifies Settings
+Test: custModSetting
+Priority: 1
+Story Points: 2
+Given the user is logged in
+And the setting can be edited
+When the user attempts to edit a setting
+Then the setting will be changed in the current session
+And it will be updated in the database
+
+Mijeong Ban:
+Title: User Login
+Acceptance Test: loginTest
+Priority: 1
+Story Points: 5
+Given there exist the valid information of user account on database
+When the users type their username and passwords on login page
+Then ensure usernames and passwords are correctly valid and matched 
+And ensure the users can access their account page 
+
+Mijeong Ban:
+Title: User SignUp
+Accenptance Test: signupTest
+Priority: 1
+Story Points: 5
+Given 
+When the users type their desire username, password and email address
+Then ensure username is unique on database
+And ensure the password contains both numeric and character input
+And ensure email address is proper format
+And ensure those data correctly goes to database 
+
+
+Title: Database Update Setting
+Test: custSaveSetting
+Priority: 2
+Story Points: 2
+Given the user is connected to the internet
+And the user is logged in
+When a setting is modified
+Then the App will contact the Server
+And update the setting in the database
+
+Jared Bridges
+Title: Customer Sells Coin
+Acceptance Test: clientSellsCoin
+Priority: 2
+Story Points: 5
+Given Customer has coin
+When the customer exchanges the coin
+Then remove the coin from their account, send the monetary value to the customer
+
+Title: Customer Exchanges Coins With another Customer
+Acceptance Test: clientTradesCoin
+Priority: 2
+Story Points: 5
+Given There are two customers
+When The customer sells coin to another customer
+Then The coin is transferred to the other customer’s account
+when they pay the monetary value to the first customer
+
+Title: User Purchases EduCoin on Web
+Acceptance Test: purCoin
+Priority: 1
+Story Points: 1
+Given the user is logged in
+And there are EduCoins remaining
+When the user requests EduCoin
+Then insure the user is charged
+And ensure the EduCoins are dispensed
+And ensure the blockchain is updated
+
+Title: Dr. D Creates More Educoin
+Acceptance Test: dMakesMore
+Priority: 2
+Story Points: 1
+Given that Dr. D is logged in
+When he creates more EduCoin
+Then insure the EduCoin amount goes up
+And ensure the blockchain is updated
+
+
+Calvin Han
+Title: Customer checking info
+Acceptance Test: infoCheck
+Priority: 2
+Story Points: 1
+Given the account as in the user logs in, when the customer wishes to check his balance then provide the correct information for the user.
+
+Title: Customer requests an increase in of money
+Acceptance Test: infoCheck
+Priority: 1
+Story Points: 1
+Given the account as in the user account, when the user requests for more educoin from the block chain, then the blockchain will provide the appropriate amount of money
+
+David DeLaus
+
+Title Customer Deposits coin
+Acceptance test Depositcoin
+Priority 1
+Story Points 1
+Given the account can accept coins
+and the coins are valid
+And the customer has coins
+When the customer deposit coins
+Then ensure the account has coins
+And ensure the account is credited
+
+Title Customer Buys Coins
+Acceptence test BUYCOIN
+Priority 1
+Story Points 1
+Given the account has money
+And the money is valid
+When customer  buys coins
+ensure account is credited with coins
+
+Mitchell Brooks:
+
+Acceptance Test: CreateCoin        Priority 1	Story Points 4
+Given:
+	DD is authenticated
+When:
+	DD requests to make EduCoins
+Ensure:
+	Create the number of coins requested
+	Register coins to DD’s account
+
+
+
+Acceptance Test: SellCoin	Priority 1	Story Points 2
+Given:
+	User is authenticated
+	User owns Educoins
+When:
+	User requests to sell EduCoins
+Ensure:
+	User receives money according to current EduCoin price and number of EduCoins sold
+	User’s account is deducted number of EduCoins sold
+
+
+MICHAEL DINEEN
+Title: Customer Withdraw Coins
+Acceptance Test: withdrawCoinItem
+Priority: 1
+Story Points: 1
+
+GIVEN the customer is a valid coin owner
+And has coins to withdraw
+And wants to withdraw coin
+WHEN the customer requests coins
+THEN ensure the proper amount of coins are distributed
+And ensure the correct amount is withdrawn
+And ensure this information is correct
+
+Title: Customer Transfers Coins
+Acceptance Test: transferCoinItem
+Priority 2:
+Story Points: 2
+GIVEN the customer is a valid coin owner
+And has coins to transfer
+And wants to transfer them to someone
+WHEN the customer requests a transfer
+THEN ensure the proper amount of coins are distributed
+And ensure they are transferred to a valid member
+And ensure both accounts are updated
+
+
+Anthony Duca
+
+Title: Sign Up Page
+Acceptance Test: signUpPage	Priority: 2	Story Points: 2
+Given that the user inputs a valid username and password
+And the password matches on both inputs
+And the database says the username isn’t taken
+When the user finally enters their username and password
+Then Add the new account to the database
+And Create a profile page for it
+And Log the user in
+And direct them to their profile page
+
+Title: Sign In Page
+Acceptance Test: signUpPage	Priority: 2	Story Points: 2
+Given that the user inputs a username and password
+And database says the username exists
+And the database says profile matches the username
+When the user finally enters their username and password
+Then Log the user in
+And direct them to their profile page
+
+Title: Customer Sells Coin
+Acceptance Test: custSellCoin
+Priority:
+Story Points:
+Given The account has a positive balance
+And the user receiving the coin has sufficient funds
+When the customer sells coin
+Then the customer’s account should be deducted the correct amount of coin being sold
+And the customer will receive the correct compensation decided in the transaction
+
+Title: Customer Buys Coin
+Acceptance Test: custBuysCoin
+Priority:
+Story Points:
+Given the account has sufficent funds
+And the account has not exceded the limit for obtaining coin
+When the customer buys coin
+Then the customer should be charged for the correct amount agreed upon in the transaction
+And the account should be credited the correct amount of coin

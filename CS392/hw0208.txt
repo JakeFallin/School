@@ -1,0 +1,32 @@
+Debugger
+
+Gdb use -g or --ggdb flags
+Dont compile with -O at same time as -g 
+gbd <file> (pid)
+gbd -c <core file> or gdb <exec file> <core file>
+gdb help
+
+break <line> set breakpoint at line
+break <func> beginning of func
+
+print <var> 
+print <expr> 
+
+list <line>
+
+watch/rwatch/awatch <var>
+
+fork = 0 if child
+fork = child pid if parent
+can use getpid()
+
+every process is a descendant of fork
+
+What if child tewrminates before the parent calls wait the os saves the child data
+
+
+pid_t pid;
+int fds[2];
+pipe(fds);  //0:read 1:write
+
+if((pid = fork()) < 0) {} 

@@ -1,0 +1,90 @@
+char str1[6]
+(void) strcpy(str1, "hello");
+char *str2 = (char*) malloc(6);
+(void) strcpy (str2, "hello");
+char3[] = "hello"
+char *str4 = "hello"
+
+if you malloc you must then free also
+when you free memory set it to null
+
+use printf
+- %s string
+- %d decimal
+- %x hex
+- %c char
+- %f float
+
+use printf("hello world number %d",2);
+printf("Float:%5.2f\n", f);
+
+instead use lower level system caslls
+int xx = open(char *names, flags, [modes])
+		 read(fd, void *buf, size)
+		 write(fd, void *buf, size)
+		 lseek(fd, amount, desc)
+		 close(fd)
+
+standard input - 0
+standard output - 1
+standard error - 2
+
+if((dd == open(..)) < 0) {
+	error
+}
+if(nread = read(..)) < 0) {
+	error
+}
+if(nread = read(..)) = 0) {
+	endoffile
+} else {
+	run code
+}
+
+n > file description n to file
+n < file " " from file
+prog >outfile 2>errfile run prog save stdout to outfile, save error
+
+printf part of streams library -> meaning its buffered IO directed to file descriptor
+stderr is unbuffered 
+stdin stdout are limited buffered
+
+
+gmake compares last write time of the target file versus that of the dependencies
+If any is newer of itf the target doesnt exist then works with the target
+
+make files:
+must start with tab (\t)
+
+
+# commenets
+# foo is a target
+# foo.cpp is a dependency
+
+
+gmake seeks makefile in order:
+1. on command line: gmake -f file
+2. makefile in current directory
+3. Makefile is current directory
+
+Ususally use capital M for Makefile
+
+target : dependencies
+main.o : main .c defs.h
+gcc -c main.c
+
+OBJS = maon.o kbd.o cmd.o \
+files.o
+
+edit: $(OBJS)
+cdd $(OBJS)-o edit
+main.o : defs.h
+kbd.o: defs.h cmd.h
+
+clean: rm -f edit $(OBJS)
+
+
+
+$@ name of target
+$< name of first dependency
+$? 

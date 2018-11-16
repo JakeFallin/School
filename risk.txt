@@ -1,0 +1,14 @@
+Project Risk:
+
+categories
+Risk Planning
+Scope Risk
+Schedule Risk
+Resource Risk
+Activity Risk
+
+-Threat
+-Vulnerability
+-Consequence/Impact
+-Likelihood/Probability
+

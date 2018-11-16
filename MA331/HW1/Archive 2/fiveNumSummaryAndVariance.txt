@@ -1,0 +1,9 @@
+fivenum(x): [1] 0.20 1.70 5.30 6.65 9.00
+fivenum(y): [1] 0.1 1.7 4.8 7.9 9.8
+var(x): [1] 9.858909
+var(y): [1] 12.51873
+cor(x,y): [1] 0.7942342
+X and Y are strongly correlated (with one outlier) and the correlation is positive.
+cor(x,y) (without outlier): [1] 0.9932443
+
+The correlation is much stronger (almost 1) with the outlier removed.

@@ -1,0 +1,25 @@
+Dave DeLaus
+Mijeong Ban
+Dylan DiGeronimo
+Mitchell Brooks
+Corey Barnwell
+Michael Dineen 
+Anthony Duca
+Evan Garrahy
+Nate Burgdorfer
+Calvin Han
+
+DuckWalk: Google Maps but for stevens campus. 
+Gives directions to various buildings on campus and how long it will take for an “average human” to walk there. 
+Has information on whether a building/restaurant is open or closed by the time you get there. 
+Possibly adding functionality for multiple buildings and calculates the best route between them. 
+
+Duck Drive: Allow users to upload files to the cloud so that they can be downloaded from other computers. 
+Good for backups, and sharing files with teammates. Shows a GUI of the file system that allows users the 
+rename and examine files. Users should also be able to edit basic text files via this GUI 
+
+Duckpress: Inspired by the great Wordpress catastrophe of ‘18 this semester, 
+the students will create an alternative to Wordpress called Duckpress. 
+It will allow for the easy creation of basic, blog-style websites. 
+It will generate basic HTML, CSS, JS, and MYSQL files. 
+It should eliminate issues caused by Wordpress such as forcing users to utilize unwieldy plugins.

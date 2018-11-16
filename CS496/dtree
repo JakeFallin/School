@@ -1,0 +1,7 @@
+
+let map = dTree_map
+	match tree with
+	Leaf a -> Leaf(Leaf a)
+	| Node(ch, l, r) -> Node(node ch, map l, map r)
+
+	

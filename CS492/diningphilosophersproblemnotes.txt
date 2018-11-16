@@ -1,0 +1,10 @@
+implementation of Dining Philosophers Problem by using pthread library (*C*, C++)
+
+Typical IPD problem
+ -philosophers eat/thing
+ -eating needs 2 forks
+ -pick one fork at a time
+
+ 2 tasks
+ - avoid deadlock by revising the skeleton code as following: only one hungry philosopher at a time should be able to attempt to eat
+ - to revise the skeleton code so that only 4 diners are allowed to eat at a time, using cojdition variables in pthread
