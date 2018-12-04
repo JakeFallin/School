@@ -38,6 +38,9 @@ public class Exercise {
 
 		ApparatusType at = ApparatusType.getRandomApparatusType();
 
+		for(WeightPlateSize w1: m.keySet()) {
+			w.map(w, w.replace(duration)
+		}
 		//initalize so we know what to replace
 		Map<WeightPlateSize, Integer> weight = new HashMap<>();
 		for(WeightPlateSize w : m.keySet()) {

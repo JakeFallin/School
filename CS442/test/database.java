@@ -159,7 +159,7 @@ public class database {
           String q4 = "Select S.sname From Sailor S, Reserves R Where S.sid = R.sid Group By S.sid Having Count(Distinct bid) = (Select Count(Distinct bid) as mycount From Boats)";
           question(conn, q4, 4, "sname"); 
 
-          //question5
+          //question51
           String q5 = "Select S.sname from Sailor S, Boats B, Reserves R Where S.sid = R.sid And B.color='red' Group By R.sid Having R.sid = (Select sid from Reserves Group By sid Having Count(sid) = (Select Max(C) as t1 from (Select sid, Count(sid) C From Reserves Group By sid) as t2));";
           question(conn, q5, 5, "sname");
 
